@@ -14,7 +14,6 @@
 </head>
 
 <body id='two' class="with-nav body--dashboard">
-  <!-- Навигация по проекту -->
   <nav class="project-nav">
     <div class="project-nav__links-wrapper">
       <a href="index.html">Форма добавления заявок</a>
@@ -22,31 +21,23 @@
       <a href="edit.html">Редактирование заявки</a>
     </div>
   </nav>
-
-  <!-- left-panel -->
   <div class="left-panel blue-skin">
-    <!-- Logo -->
     <div class="left-panel__logo">
       <div class="left-panel__logo-title">CRM заявки</div>
       <div class="left-panel__logo-subtitle">учебный проект webcademy</div>
     </div>
-    <!-- // Logo -->
-    <!-- User -->
     <div class="left-panel__user clearfix">
       <div class="left-panel__user-photo">
         <img src="img/avatars/avatar-128.jpg" alt="Avatar" />
       </div>
       <div class="left-panel__user-name">Петр <br />Васильевич</div>
     </div>
-    <!-- // User -->
-    <!-- Navigation 1 -->
     <div class="left-panel__navigation">
       <div class="left-panel__navigation-title">Заявки</div>
       <ul id='one'>
         <li><a data-btn='all-together' href="#" class="active">Все вместе</a></li>
         <li>
           <a data-btn='new' href="#">Новые
-            <!-- <div class="badge">12</div> -->
           </a>
         </li>
         <li><a data-btn='work' href="#">В работе</a></li>
@@ -54,8 +45,6 @@
         <li><a data-btn='btnAarchive' href="#">Архив</a></li>
       </ul>
     </div>
-    <!-- // Navigation 1 -->
-    <!-- Navigation 2 -->
     <div class="left-panel__navigation">
       <div class="left-panel__navigation-title">Продукты</div>
       <ul>
@@ -63,21 +52,14 @@
         <li><a href="#">Архив</a></li>
       </ul>
     </div>
-    <!-- // Navigation 2 -->
-    <!-- Navigation 3 -->
     <div class="left-panel__navigation left-panel__navigation--no-line">
       <ul>
         <li><a href="#">Выход</a></li>
       </ul>
     </div>
-    <!-- // Navigation 3 -->
   </div>
-  <!-- // left-panel -->
-
-  <!-- main-wrapper -->
   <div class="main-wrapper">
     <div class="container-fluid">
-      <!-- row -->
       <div class="row justify-content-between align-items-center">
         <div class="col">
           <div class="admin-heading-1">Работа с заявкой</div>
@@ -86,13 +68,9 @@
           <a href="table.html" class="btn btn-link">Вернуться назад</a>
         </div>
       </div>
-      <!-- // row -->
-      <!-- row -->
       <div class="row">
-        <!-- col -->
         <div class="col">
           <form action="">
-            <!-- card -->
             <div class="card mb-4">
               <div class="card-header">Данные о заявке</div>
               <div class="card-body">
@@ -102,14 +80,12 @@
                   </div>
                   <div id='number' class="col">Заявка №1</div>
                 </div>
-
                 <div class="row mb-3">
                   <div class="col-md-2">
                     <strong>Дата создания:</strong>
                   </div>
                   <div id='date' class="col">2020-04-20 13:52:13</div>
                 </div>
-
                 <div class="row mb-3">
                   <div class="col-md-2">
                     <strong>Продукт:</strong>
@@ -124,7 +100,6 @@
                     </select>
                   </div>
                 </div>
-
                 <div class="row mb-3">
                   <div class="col-md-2">
                     <strong>Имя:</strong>
@@ -133,7 +108,6 @@
                     <input id='name' type="text" class="form-control" value="Петр Сергеевич" />
                   </div>
                 </div>
-
                 <div class="row mb-3">
                   <div class="col-md-2">
                     <strong>Email:</strong>
@@ -150,14 +124,13 @@
                     <input id='phone' type="text" class="form-control" value="+7 (903) 555-77-55" />
                   </div>
                 </div>
-
                 <div class="row mb-3">
                   <div class="col-md-2">
                     <strong>Статус заявки:</strong>
                   </div>
                   <div class="col">
                     <select id='status' class="custom-select" id="inputGroupSelect01">
-                      <option >Выберите...</option>
+                      <option>Выберите...</option>
                       <option value="new">Новая</option>
                       <option value="work">В работе</option>
                       <option value="payment-expected">Ожидается оплата</option>
@@ -168,7 +141,6 @@
                 </div>
               </div>
             </div>
-            <!-- //card -->
             <div class="row justify-content-between">
               <div class="col">
                 <a id='save' href="table.html" type="button" class="btn btn-primary">Сохранить изменения</a>
@@ -179,17 +151,12 @@
             </div>
           </form>
         </div>
-        <!-- //col -->
       </div>
-      <!-- //row -->
     </div>
   </div>
-  <!-- // main-wrapper -->
 
-  <!-- Модель -->
+
   <script src="./js/model.js"></script>
-
-  <!-- Форма -->
   <script src="./js/edit/edit.view.js"></script>
   <script src="./js/edit/edit.controller.js"></script>
 

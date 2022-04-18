@@ -13,7 +13,6 @@ var viewControllerTable = (function () {
   }
 
 
-  // Функция отображает полученные данные
   function displaysData(bids) {
 
     let html, container, color;
@@ -69,7 +68,7 @@ var viewControllerTable = (function () {
 
   }
 
-  // Функция отображает количество статусов
+
   function displaysNumberStatuses(number) {
 
     let allBtn = document.querySelectorAll(DOMstrings.verticalBtn);

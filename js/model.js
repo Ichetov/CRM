@@ -35,7 +35,6 @@ const modelController = (function () {
   }
 
 
-  // Функция создаёт на основе конструктора объект пушит его в массив и сохраняет в localStorage
   function addItem(item) {
 
     let newItem, id, status;
@@ -53,7 +52,7 @@ const modelController = (function () {
     localStorage.setItem('all', JSON.stringify(data.allItems));
   }
 
-  // Функция добавляет в в свойство объекта id элемента
+
   function savesElement(number) {
 
     data.allItems.find(item => {
@@ -87,7 +86,6 @@ const modelController = (function () {
   }
 
 
-  // Функция получает количество объектов с тем или иным статусом и возвращает объект
   function displaysQuantityStatuses() {
 
     return {
@@ -100,7 +98,7 @@ const modelController = (function () {
 
   }
 
-  // Функция считает сколько объектов с тем или иным статусом и возвращает число
+
   function countsNumber(text) {
     let number = 0;
 
@@ -112,7 +110,7 @@ const modelController = (function () {
   }
 
 
-  // Функция находит объект который нужно удалить и удаляет его из массива с основными данными
+
   function deletesElement(numberId) {
 
     for (let i = 0; i < data.allItems.length; i++) {
@@ -126,8 +124,7 @@ const modelController = (function () {
     localStorage.setItem('all', JSON.stringify(data.allItems));
 
   }
-
-  // Функция находит объект который нужно удалить и сохраняет его отдельно в  localStorage под своим ключом
+  
   function addsArray(numberId) {
 
     let itemDeleted = data.allItems.find(function (item) {

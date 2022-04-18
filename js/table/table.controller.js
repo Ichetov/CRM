@@ -4,11 +4,9 @@ var controllerTable = (function (model, view) {
   view.displaysData(model.data().allItems);
 
 
-  // Метод отображает в левой колонки числа которые соответствуют данным с тем или иным статусом
-
   view.displaysNumberStatuses(model.displaysQuantityStatuses());
 
-  // При клике по редактировать нахожу id кнопки по корой кликнул и запускаю метод который найдёт элемент с этим id и добавит его в объект дата
+
   document.querySelector(DOM.container).addEventListener('click', function (e) {
 
     if (e.target.hasAttribute('data-editing')) {
@@ -19,7 +17,6 @@ var controllerTable = (function (model, view) {
   })
 
 
-  // При клике по любой из кнопок имеющей data атрибут data-btn, будет браться та кнопка, у уоторой есть этот атрибут
   document.querySelector(DOM.body).addEventListener('click', function (e) {
 
     if (e.target.dataset['btn']) {
@@ -36,7 +33,6 @@ var controllerTable = (function (model, view) {
 
 
   function filtersProducts(product) {
-    // Нахожу у какой кнопки в данный момент есть активный класс и нахожу data атрибут этого класса
     let activeButton, data;
     let allBtn = document.querySelectorAll(DOM.btnHorizontal);
 

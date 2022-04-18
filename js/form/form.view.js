@@ -9,7 +9,6 @@ var viewControllerForm = (function () {
   }
 
 
-  // Функция возвращает данные из формы
   function getInput() {
     return {
       name: document.querySelector(DOMstrings.name).value,
@@ -22,13 +21,12 @@ var viewControllerForm = (function () {
   }
 
 
-  // Функция возвращает дату
   function displayMonth() {
     let now = new Date().toLocaleDateString();
     return now;
   }
 
-  // Функция возвращает дату и время
+
   function displaysDateTime() {
     let now = new Date();
     let v = now.toLocaleTimeString();
